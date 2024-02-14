@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Calculation</title>
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-8">
+    <!-- card container -->
+    <main class="flex flex-1">
+        <div class="flex-1 grid grid-cols-1 lg:grid-cols-3">
+            <!-- first card -->
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                <figure><img src="images/triangle.png" alt="triangle" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Triangle</h2>
+                    <p>Area = 0.5 * b * h </p>
+                    <div class="flex gap-2">
+                        <input id="triangle-base" class="w-20 border rounded" type="" placeholder="b">
+                        <span>cm</span>
+                        <input  id="triangle-height" class="w-20 border rounded" type="" name="" placeholder="h">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <p class="font-medium">Area: <span id="Area-calculate"></span> <span>cm<sup>2</sup></span></p>
+                    </div>
+                    <br>
+                    <div class="card-actions">
+                        <button onclick="triangleAreaCalculate()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- second card -->
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                <figure><img src="images/rectangle.png" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>Area = w x I</p>
+                    <div class="flex gap-2">
+                        <input id="rectangle-width" class="w-20 border rounded" type="text" placeholder="w">
+                        <p>cm</p>
+                        <input id="rectangle-long" class="w-20 border rounded" type="text" placeholder="l">
+                        <p>cm</p>
+                    </div>
+                    <br>
+                    <div class="card-actions">
+                        <button onclick="calculateRectangle()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- third card -->
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- fourth card -->
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-40 border ">
+            <p class="text-center">Area Calculation</p>
+        </div>
+    </main>
+    <script src="script/triangle.js"></script>
+    <script src="script/rectangle.js"></script>
+</body>
+
+</html>
